@@ -18,7 +18,7 @@ buildroot_initramfs_wrkdir := $(wrkdir)/buildroot_initramfs
 # TODO: make RISCV be able to be set to alternate toolchain path
 RISCV ?= $(buildroot_initramfs_wrkdir)/host
 RVPATH := $(RISCV)/bin:$(PATH)
-target := riscv64-buildroot-linux-gnu
+target := riscv64-linux-gnu
 
 CROSS_COMPILE := $(RISCV)/bin/$(target)-
 
